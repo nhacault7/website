@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS: How Do They Make Websites Work?</title>
+  <script src="https://kit.fontawesome.com/0bcbad263a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <p>Nicholas Hacault</p>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../blog-posts.html">Blog Posts</a></li>
+        <li><a href="../about-me.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1><hr>Blog Posts<hr></h1>
+    <section class="blog-article">
+      <h2>HTML & CSS: How Do They Make Websites Work?</h2>
+      <h3>There are many reasons for having your own website. From being a business owner to wanting to start a blog. Making your own can be a complex process so a great place to start is with the languages that make up a website.</h3>
+      <img src="../../images/tile-letters.jpg" alt="Letter tiles that spell HTML">
+      <p>HyperText Markup Language (HTML), is the most common language used for structuring webpages. Being a markup language, it differs from our preconceived notions of what coding is since HTML is more of a way to format text for web browsers.</p>
+      <p>At its core, HTML code is a collection of ‘elements’ that allows a web browser to segment sections of content. An element is made up of 4 components:</p>
+      <ol>
+        <li>An opening tag. (<code><span class="tag-color"><</span><span class="tag-name-color">p</span><span class="tag-color">></span></code>)</li>
+        <li>An attribute. (<code><span class="class-color">class</span><span class="class-name-color">=”name”</span></code>)</li>
+        <li>Your content. (<code class="text-color">I really love snakes</code>)</li>
+        <li>A closing tag. (<code><span class="tag-color"><</span><span class="tag-name-color">/p</span><span class="tag-color">></span></code>)</li>
+      </ol>
+      <p>The opening and closing tags are found at the start and end of an HTML element. Opening and closing tags look almost identical except for the slash found in the closing tag. In the modern-day most tags carry semantic meaning, for accessibility reasons, so you have to choose the appropriate tag for the content inside. This content can range from an image, link or just plain text. Some elements may also include an attribute, which is just extra information useful to whoever is working on the code and is not visible on the document.</p>
+      <p>Here is an example of an HTML element that displays a paragraph:</p>
+      <p><code><span class="tag-color"><</span><span class="tag-name-color">p</span> <span class="class-color">class</span><span class="class-name-color">=”name”</span><span class="tag-color">></span><span class="text-color">I really love snakes</span><span class="tag-color"><</span><span class="tag-name-color">/p</span><span class="tag-color">></span></code></p>
+      <h4>Basic HTML flow</h4>
+      <p>Every HTML document has a flow that dictates the order the elements are laid out. Individual elements can be one of two types.</p>
+      <p>Block-level: these elements take up the entire space of the line they are on regardless of the length of the content. This means that any element will start on a new line if it’s preceded by a block-level element in the code.</p>
+      <p>Inline: contrary to block-level elements, an inline element will only take up as much space as its content. You can compare this to the way a word document displays text where every word immediately follows the next until it reaches the end of the line or you hit the enter key.</p>
+      <h4>What is CSS</h4>
+      <p>Cascading Style Sheets (CSS), may not be something you are familiar with. However, it is responsible for styling web pages in the way we typically see them. Without CSS, every webpage would just be a long list of content with no colors, cool fonts, or even animations.</p>
+      <p>CSS allows you to target HTML elements with the use of a ruleset, which is made up of 3 parts:</p>
+      <ul>
+        <li>The selector. (<code><span class="selector-color">p</span></code>)</li>
+        <li>A property. (<code><span class="property-color">color</span></code>)</li>
+        <li>A value. (<code><span class="value-color">red</span></code>)</li>
+      </ul>
+      <p>The selector is responsible for targeting specific HTML elements by either their tag or identifying attributes. Once you’ve locked onto your specific element you can use a property to declare how you want to modify the element, followed by a value that determines the properties effect.</p>
+      <p>Here is an example of a CSS ruleset that changes a paragraph’s text color:</p>
+      <code>
+        <pre><span class="selector-color">p</span> {</pre>
+        <pre> <span class="property-color">color</span>: <span class="value-color">red</span>;</pre>
+        <pre>}</pre>
+      </code>
+      <p><em>Note that the property and value are followed by a colon and semicolon, and are also wrapped inside of curly braces.</em></p>
+      <p>There are many types of elements and rulesets but with this basic knowledge, you can start your journey to creating websites of your own! I would also highly recommend going to <a href="https://www.w3schools.com">w3schools</a> and reading their guide on both HTML and CSS</p>
+    </section>
+  </main>
+</body>
+</html>
