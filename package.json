@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nhacault7/website/issues"
   },
-  "homepage": "https://github.com/nhacault7/website#readme"
+  "homepage": "https://github.com/nhacault7/website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
