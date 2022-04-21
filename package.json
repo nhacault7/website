@@ -18,6 +18,7 @@
   "homepage": "https://github.com/nhacault7/website#readme",
   "devDependencies": {
     "clean-css": "^5.3.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
