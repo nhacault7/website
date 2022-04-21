@@ -1,4 +1,4 @@
-const { src, dest, series, parallel } = require('gulp');
+const { src, dest, series, parallel, watch } = require('gulp');
 const gulpWebpack = require('webpack-stream');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
@@ -26,9 +26,22 @@ const processStyles = () => {
     .pipe(sourcemaps.write())
     .pipe(dest('dist/styles'));
 }
+
+const watchTask = () => {
+  return watch(
+    ['src/**/**/**'],
+    parallel(
+      series(processIndex, processPages, processBlogPages), 
+      processImages, 
+      processStyles
+    )
+  )
+}
  
 exports.default = parallel(
   series(processIndex, processPages, processBlogPages), 
   processImages, 
   processStyles
 );
+
+exports.watch = watchTask;
