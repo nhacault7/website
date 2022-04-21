@@ -15,6 +15,10 @@ const processBlogPages = () => {
   return src('src/pages/blog-pages/*.html').pipe(dest('dist/pages/blog-pages'));
 }
 
+const processImages = () => {
+  return src(['src/images/*.jpg', 'src/images/*.png']).pipe(dest('dist/images'));
+}
+
 const processStyles = () => {
   return src('src/styles/*.css')
     .pipe(sourcemaps.init())
@@ -23,4 +27,4 @@ const processStyles = () => {
     .pipe(dest('dist/styles'));
 }
  
-exports.default = series(processIndex, processPages, processBlogPages, processStyles);
+exports.default = series(processIndex, processPages, processBlogPages, processImages, processStyles);
