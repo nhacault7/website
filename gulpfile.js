@@ -27,4 +27,8 @@ const processStyles = () => {
     .pipe(dest('dist/styles'));
 }
  
-exports.default = series(processIndex, processPages, processBlogPages, processImages, processStyles);
+exports.default = parallel(
+  series(processIndex, processPages, processBlogPages), 
+  processImages, 
+  processStyles
+);
